@@ -8,14 +8,17 @@ public class Main {
         Livro livro2 = new Livro("Harry Potter", "Não sei", "32143");
         Membro membro1 = new Membro("João", 1, "joao@email.com");
         Membro membro2 = new Membro("Matheus", 2, "matheus@email.com");
+        Membro membro3 = new Membro("Luan", 3, "luan@email.com");
 
         biblioteca.adicionarLivro(livro1);
         biblioteca.adicionarLivro(livro2);
         biblioteca.registrarMembro(membro1);
         biblioteca.registrarMembro(membro2);
+        biblioteca.registrarMembro(membro3);
         biblioteca.registrarEmprestimo(livro1, membro1);
-        biblioteca.registrarEmprestimo(livro2, membro2);
         biblioteca.devolverLivro(livro1);
+        biblioteca.registrarEmprestimo(livro2, membro2);
+        biblioteca.registrarEmprestimo(livro1, membro3);
         biblioteca.visualizarBiblioteca();
 
         // Teste do sistema de pedidos do restaurante
